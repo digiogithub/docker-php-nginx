@@ -68,3 +68,16 @@ To modify this container to your specific needs please see the following example
 * [Adding composer](https://github.com/TrafeX/docker-php-nginx/blob/master/docs/composer-support.md)
 * [Getting the real IP of the client behind a load balancer](https://github.com/TrafeX/docker-php-nginx/blob/master/docs/real-ip-behind-loadbalancer.md)
 * [Sending e-mails](https://github.com/TrafeX/docker-php-nginx/blob/master/docs/sending-emails.md)
+
+## Tasks
+
+### rebuild-and-run
+
+Rebuild the image and run the container with the latest changes
+
+Interactive: true
+
+```bash
+docker build -t php-nginx .
+docker run -p 80:80 --rm --name php-nginx-sample php-nginx:latest
+```
